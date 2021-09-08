@@ -11,7 +11,7 @@ I work in the field of civil engineering.I think that my actual job will lead me
 * HTML (Basic)
 * CSS (Basic)
 * JavaScript (Basic)
-* Git
+* Git (Basic)
 ## Code Example
 ```
 function multiply(a, b = 1) {
