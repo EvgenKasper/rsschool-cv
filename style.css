@@ -1,0 +1,14 @@
+.pagebody {
+ color: blue;
+ text-align: center;   
+}
+.about-me {
+  background: red;
+  width: 460px;
+  margin: 0 auto 0 auto;
+    
+}
+.about-me h2 {
+    background: rgb(31, 61, 126);
+    text-align: center; 
+  }
