@@ -1,9 +1,9 @@
 .pagebody {
-  background: rgba(185, 169, 243, 0.24);
-  font: 16px/24px "Raleway", sans-serif ;
   margin: 0px;
-
+  font: 16px/24px "Raleway", sans-serif ;
+  background: #7cb8bd9c;
 }
+
 *,
 *:before,
 *:after {
@@ -17,8 +17,9 @@
   max-width: 1180px;
   width: 100%;
   margin: 0px auto;
-  padding: 0px 10px;       /*размещение по центру текста и картинки*/
+  padding: 0px 10px;       
 }
+
 .containerm {
   max-width: 1180px;
   width: 100%;
@@ -35,18 +36,21 @@
   width: 100%;
   height: 40px;
 }
+
 .headerbody {
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background:  rgb(63, 64, 78);
   width: 100%;
   height: 40px;
+  color: rgba(204, 236, 24);
   text-transform: uppercase;
-  color: rgba(204, 236, 24, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  background:  rgb(63, 64, 78);
+  
+  
 }
 .titleheadermenu {
   font-size: 10px;
@@ -56,16 +60,17 @@
     display: flex;
   }
   .header-list li {
-    font-size: 12px ;
-    font-weight: 600;
     list-style: none;
     padding: 0 20px 0 0 ;
   }
   .header-list li a {
-    text-decoration: none; 
-    color: rgba(204, 236, 24, 0.5);
+    text-decoration: none;
+    color: rgba(204, 236, 24); 
   }
-   
+  h6 {
+    line-height: 12px; 
+  }
+  
  /* Main 
  ===============================*/
 
@@ -75,9 +80,13 @@
   line-height: 24px;
 }
 .figure {
+  width: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
+}
+.figure img {
+ width: 100%; 
 }
 .cont,
 .skill,
@@ -94,12 +103,20 @@
   padding: 0 60px 0 60px;
   list-style: none;
 }
+.cont ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 .educ ul li {
   padding-bottom: 30px;
 }
 .right-side {
   background:rgb(210, 223, 213);
   color: rgb(69, 70, 76);
+}
+.right-side .sectitle {
+  color: black;
 }
 .name{
   height: 420px;
@@ -108,55 +125,55 @@
 .about-me p,
 .exper p {
   padding: 30px 60px 30px 60px;
-  font 24px/36px;
-}
-.code-example code {
-  padding: 30px 60px 30px 0px;
-  font-family: monospace;
+  margin: 0;
+ }
+.code-example pre {
+  padding: 10px 60px;
   text-align: left;
+  white-space: pre-line;
 }
 .sectitle {
+  position: relative;
   font: bold 24px/36px "Raleway", sans-serif ;
   display: flex;
   padding: 0 0 0 40px; 
   background: rgb(132, 136, 128);
 }
-h1 {
-  font-size: 50px;
-  text-align: center;
-  color: black;
-}
-h2 {
-  font-size: 35px;
-  font-style: italic;
-  font-weight: 300;
-  text-align: center;
-}
-
- 
- /* .header-menu:before {
+.sectitle:before {
    content: "";
    position: absolute;
    top: 0;
    left: 0;
-   width: 100%;
-   height: 100%;
-   background:rgb(69, 70, 76);
+   width: 16px;
+   height:100%;
+   background: rgba(204, 236, 24);
  }
- */
-
+h1 {
+  padding: 0px 60px 20px 60px;
+  margin: 0;  
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+}
+h2 {
+  padding: 0px 60px 30px 60px;
+  margin: 0;  
+  font-style: italic;
+  font-weight: 300;
+}
+ 
   /* Footer 
  ===============================*/
- .footerbody {
+
+.footerbody {
   background:  rgb(63, 64, 78); 
+  font: 30px "Raleway", sans-serif ;
+  font-weight: 600;
+  text-align: center;
   width: 100%;
-  height: 80px;
-  color: rgba(204, 236, 24, 0.5);
+  height: 60px;
+  color: rgba(204, 236, 24);
   display: flex;
   align-items: center;
   justify-content: space-around;
- 
 }
-.footergh {
-
-} 
