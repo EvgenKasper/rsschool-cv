@@ -1,4 +1,4 @@
- # Yauhen Kishkel
+Yauhen Kishkel
 ------------
  ## Contacts
 Location: Minsk, Belarus
