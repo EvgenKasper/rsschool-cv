@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .pagebody {
   margin: 0px;
   font: 16px/24px "Raleway", sans-serif ;
@@ -10,7 +14,7 @@
    box-sizing: border-box;
 }
 
- /* Container 
+/* Container 
  ===============================*/
 
 .container {
@@ -49,12 +53,14 @@
   align-items: center;
   justify-content: space-between;
   background:  rgb(63, 64, 78);
-  
-  
+
 }
 .titleheadermenu {
   font-size: 10px;
   padding: 0 0 0 20px;
+  position: relative;
+  z-index: 5;
+
 }
   .header-list {
     display: flex;
@@ -63,15 +69,118 @@
     list-style: none;
     padding: 0 20px 0 0 ;
   }
-  .header-list li a {
+  .link {
     text-decoration: none;
     color: rgba(204, 236, 24); 
   }
   h6 {
     line-height: 12px; 
   }
-  
+
+.header-burger {
+  display: none;
+}
+
+
+@media (max-width:767px){
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 20px; 
+    height: 18px;
+    margin: 0 30px 0 0;
+    z-index: 4;
+  }
+  .header-burger:before,
+  .header-burger:after {
+    content: "";
+    background:rgba(204, 236, 24); 
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s;
+  }
+  .header-burger:before {
+    top: 0;
+  }
+  .header-burger:after {
+    bottom: 0;
+  }
+  .header-burger span {
+    position: absolute;
+    background:rgba(204, 236, 24); 
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 7px;
+    transition: all 0.3s;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(63, 64, 78);
+    padding: 20px 0 0 0;
+    transition: 1s;
+  }
+
+  .header-list {
+    display: block;
+  }
+  .header-list li {
+    margin bottom: 20px ;
+    font-size: 30px;
+  }
+  .header-burger.active:before {
+    transform: rotate(45deg);
+    top: 7.5px;      
+  }
+  .header-burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 7.5px;
+  }
+  .header-burger.active span {
+    display: none;
+  }
+  .header-menu.active {
+    top: 0;
+    background: rgba(63, 64, 78, 0.973);
+    transition: 1s;
+    z-index: 2;
+  }
+  .pagebody.lock {
+    overflow: hidden;
+  }  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Main 
+
  ===============================*/
 
 .left-side {
@@ -138,6 +247,7 @@
   display: flex;
   padding: 0 0 0 40px; 
   background: rgb(132, 136, 128);
+  
 }
 .sectitle:before {
    content: "";
@@ -171,7 +281,7 @@ h2 {
   font-weight: 600;
   text-align: center;
   width: 100%;
-  height: 60px;
+  height: 50px;
   color: rgba(204, 236, 24);
   display: flex;
   align-items: center;
