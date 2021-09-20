@@ -33,10 +33,10 @@ html {
  ===============================*/
 
 .header {
-  width: 100%;
-  height: 40px;
   position: relative;
   z-index: 3;
+  width: 100%;
+  height: 40px;
 }
 
 .headerbody {
@@ -51,13 +51,13 @@ html {
   align-items: center;
   justify-content: space-between;
   background: #3f404e;
-
 }
+
 .titleheadermenu {
-  font-size: 10px;
-  padding: 0 0 0 20px;
   position: relative;
   z-index: 4;
+  padding: 0 0 0 20px;
+  font-size: 10px;
 }
 
 .header-list {
@@ -65,8 +65,8 @@ html {
 }
 
 .header-list li {
-  list-style: none;
   padding: 0 20px 0 0 ;
+  list-style: none;
 }
 
 .link {
@@ -127,47 +127,46 @@ html {
   }
   
   .name-mobile {
-    display: block;
-    text-align: center;
     position: fixed;
-    margin: 0;
+    z-index: 3;
     top: -20px;
     width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
     font-size: 16px;
     line-height: 24px;
-    z-index: 3;
   }
 
   .name-mobile p {
-   font-style: italic;
-   width: 100%;
-   text-align: center;
-   font-variant: small-caps;
-   font-weight: 300;
-   font-size: 12px;
-   margin-top: 20px;
-   position: fixed;
-   top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 300;
+    font-size: 12px;     
   }
 
-
   .header-burger {
-    display: block;
     position: relative;
+    z-index: 4;
+    display: block;
     width: 20px; 
     height: 18px;
     margin: 0 30px 0 0;
-    z-index: 4;
   }
 
   .header-burger:before,
   .header-burger:after {
-    content: "";
-    background:#ccec18; 
     position: absolute;
+    left: 0;
     width: 100%;
     height: 3px;
-    left: 0;
+    content: "";
+    background:#ccec18; 
     transition: all 0.3s;
   }
 
@@ -181,11 +180,11 @@ html {
 
   .header-burger span {
     position: absolute;
-    background:#ccec18; 
-    width: 100%;
-    height: 3px;
     left: 0;
     top: 7px;
+    width: 100%;
+    height: 3px;
+    background:#ccec18; 
     transition: all 0.3s;
   }
 
@@ -195,8 +194,8 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #3f404e;
     padding: 20px 0 0 0;
+    background: #3f404e;
     transition: 1s;
   }
 
@@ -205,19 +204,18 @@ html {
   }
 
   .header-list li {
-    margin-bottom:  10px;
     font-size: 24px;
     line-height: 36px;
   }
 
   .header-burger.active:before {
-    transform: rotate(45deg);
     top: 7.5px;      
+    transform: rotate(45deg);
   }
 
   .header-burger.active:after {
-    transform: rotate(-45deg);
     bottom: 7.5px;
+    transform: rotate(-45deg);
   }
 
   .header-burger.active span {
@@ -226,9 +224,9 @@ html {
 
   .header-menu.active {
     top: 0;
+    z-index: 2;
     background: rgba(63, 64, 78, 0.973);
     transition: 1s;
-    z-index: 2;
   }
 
   .pagebody.lock {
@@ -240,6 +238,7 @@ html {
       font-size: 20px;
       line-height: 30px;
     }
+
     .header-list {
       margin-top: 40px;
     }
@@ -253,30 +252,36 @@ html {
   background:#45464c;
   color: white;
 }
+
 .figure {
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
+
 .figure img {
  width: 100%; 
 }
+
 .cont,
 .skill,
 .educ,
 .eng {
   line-height: 30px;
 }
+
 .eng p {
   padding: 0 40px;
 }
+
 .cont ul,
 .educ ul,
 .skill ul {
   padding: 0 40px;
   list-style: none;
 }
+
 .cont ul li a {
   text-decoration: none;
   color: white;
@@ -285,44 +290,51 @@ html {
 .educ ul li {
   padding-bottom: 30px;
 }
+
 .right-side {
   background:#d2dfd5;
   color: #45464c;
 }
+
 .right-side .sectitle {
   color: black;
 }
+
 .name{
   height: 420px;
   padding-top: 120px; 
 }
+
 .about-me p,
 .exper p {
   padding: 30px 60px;
   margin: 0;
  }
+
 .code-example pre {
   padding: 10px 60px;
   text-align: left;
   white-space: pre-line;
 }
+
 .sectitle {
   position: relative;
-  font: bold 24px/36px "Raleway", sans-serif ;
   display: flex;
   padding: 0 0 0 40px; 
+  font: bold 24px/36px "Raleway", sans-serif ;
   background: #848880;
-  
 }
+
 .sectitle:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height:100%;
    content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 16px;
-   height:100%;
    background: #ccec18;
- }
+}
+
 h1 {
   padding: 0px 60px 20px 60px;
   margin: 0;  
@@ -330,6 +342,7 @@ h1 {
   line-height: 60px;
   color: black;
 }
+
 h2 {
   padding: 0px 60px 30px 60px;
   margin: 0;  
@@ -341,14 +354,14 @@ h2 {
  ===============================*/
 
 .footerbody {
-  background: #3f404e; 
+  display: flex;
+  width: 100%;
+  height: 50px;
   font: 20px "Raleway", sans-serif ;
   font-weight: 300;
   text-align: center;
-  width: 100%;
-  height: 50px;
-  color: #ccec18;
-  display: flex;
   align-items: center;
   justify-content: space-around;
+  background: #3f404e; 
+  color: #ccec18;
 }
