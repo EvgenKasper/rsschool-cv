@@ -13,3 +13,6 @@ link.addEventListener('click',()=>{
     menu.classList.toggle('active');
     body.classList.toggle('lock');
 })
+
+
+
